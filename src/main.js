@@ -1,5 +1,4 @@
 import './styles/main.scss'
-import patternCurve from './images/pattern-curve.svg'
 import { setupCounter } from './counter.js'
 import backgroundLogo from './components/background-logo/backgroundLogo.js'
 

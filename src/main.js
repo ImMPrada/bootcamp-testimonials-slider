@@ -1,6 +1,6 @@
-import './styles/main.scss'
-import { setupCounter } from './counter.js'
-import backgroundLogo from './components/background-logo/backgroundLogo.js'
+import './styles/main.scss';
+import { setupCounter } from './counter.js';
+import backgroundLogo from './components/background-logo/backgroundLogo.js';
 
 document.querySelector('#app').innerHTML = `
   <div class="testimonials">
@@ -10,6 +10,6 @@ document.querySelector('#app').innerHTML = `
     </div>
   </div>
   ${backgroundLogo}
-`
+`;
 
-setupCounter(document.querySelector('#counter'))
+setupCounter(document.querySelector('#counter'));

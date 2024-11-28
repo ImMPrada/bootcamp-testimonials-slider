@@ -1,4 +1,6 @@
-@import 'reseter.scss';
+@use 'reseter.scss';
+@use 'constants.scss';
+@use 'fonts.scss';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

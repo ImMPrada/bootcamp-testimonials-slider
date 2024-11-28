@@ -1,6 +1,4 @@
-@use 'reseter.scss';
-@use 'constants.scss';
-@use 'fonts.scss';
+@use 'reseter';
 
 #app {
   width: 100vw;
@@ -9,10 +7,4 @@
   padding: 0;
   text-align: center;
   background-color: red;
-}
-
-.testimonials {
-  height: 100%;
-  width: 100%;
-  background-color: blue;
 }

@@ -2,7 +2,7 @@ import './styles.scss';
 import patternBg from '../../images/pattern-bg.svg';
 import tanya from '../../images/image-tanya.jpg';
 
-function Photo() {
+function photo() {
   return (
     `
       <div class="photo">
@@ -12,4 +12,4 @@ function Photo() {
   );
 }
 
-export default Photo;
+export default photo;

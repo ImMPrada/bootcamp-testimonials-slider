@@ -1,6 +1,6 @@
 import './styles.scss';
 
-function Quote(args) {
+function quote(args) {
   const { content, name, role } = args;
 
   return (
@@ -17,4 +17,4 @@ function Quote(args) {
   );
 }
 
-export default Quote;
+export default quote;

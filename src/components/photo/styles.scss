@@ -1,0 +1,28 @@
+@use '../../styles/constants';
+
+
+.photo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../../images/pattern-bg.svg');
+  background-size: fill;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 80px;
+
+  border: 1px solid green;
+  
+  img {
+    display: block;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: constants.$mobile-breakpoint) {
+    padding: 36px 28px;
+    height: auto;
+    width: 100%;
+  }
+}

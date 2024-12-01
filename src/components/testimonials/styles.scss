@@ -7,14 +7,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid green;
+
+  background-image: url('../../images/pattern-curve.svg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: bottom left;
 
   &-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
-    border: 1px solid red;
   }
 }

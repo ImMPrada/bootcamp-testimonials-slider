@@ -2,27 +2,27 @@
 
 
 .photo {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-image: url('../../images/pattern-bg.svg');
-  background-size: fill;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 80px;
+  padding: 3rem;
 
   border: 1px solid green;
-  
+
   img {
-    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 30rem;
     object-fit: cover;
   }
 
   @media screen and (max-width: constants.$mobile-breakpoint) {
-    padding: 36px 28px;
-    height: auto;
-    width: 100%;
+    padding: 2rem;
   }
 }

@@ -6,7 +6,11 @@
   z-index: 2;
   padding-top: 64px;
 
-  border: 1px solid red;
+  background-image: url('../../images/pattern-quotes.svg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-position-x: 60px;
 
   @include fonts.body-text;
 

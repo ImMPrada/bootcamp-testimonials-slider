@@ -18,6 +18,10 @@
     max-width: 30rem;
     max-height: 30rem;
     object-fit: cover;
+
+    -webkit-box-shadow: 15px 30px 40px 5px rgba(32,32,71,1);
+    -moz-box-shadow: 15px 30px 40px 5px rgba(32,32,71,1);
+    box-shadow: 15px 30px 40px 5px rgba(32,32,71,1);
   }
 
   @media screen and (max-width: constants.$mobile-breakpoint) {

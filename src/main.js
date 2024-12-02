@@ -8,14 +8,24 @@ renderTestimonial(state);
 
 const changeTestimonialsIndex = buildAction(state);
 
-addListenerToButton('prevButton', () => {
+const renderPrev = () => {
   changeTestimonialsIndex(-1);
   console.log(state);
   renderTestimonial(state);
-});
+};
 
-addListenerToButton('nextButton', () => {
+const renderNext = () => {
   changeTestimonialsIndex(1);
   console.log(state);
   renderTestimonial(state);
+}
+
+addListenerToButton('prevButton', () => renderPrev() );
+
+addListenerToButton('nextButton', () => renderNext());
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowLeft') { renderPrev(); }
+
+  if (event.key === 'ArrowRight') { renderNext(); }
 });

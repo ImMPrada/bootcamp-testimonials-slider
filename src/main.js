@@ -1,4 +1,4 @@
 import './styles/main.scss';
-import Testimonials from './components/testimonials/Testimonials.js';
+import testimonials from './components/testimonials/testimonials.js';
 
-document.querySelector('#app').innerHTML = Testimonials();
+document.querySelector('#app').innerHTML = testimonials();

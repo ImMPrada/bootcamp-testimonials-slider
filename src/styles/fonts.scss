@@ -1,27 +1,42 @@
+@use 'constants';
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 $font-family-base: 'Inter', sans-serif;
 $font-weight-light: 300;
 $font-weight-bold: 700;
 
-@mixin light-text {
+@mixin body-text {
   font-family: $font-family-base;
   font-weight: $font-weight-light;
   font-size: 32px;
   line-height: 1.375;
+  color: constants.$grey;
 
-  @media (max-width: $mobile-breakpoint) {
+  @media (max-width: constants.$mobile-breakpoint) {
     font-size: 18px;
   }
 }
 
-@mixin bold-text {
+@mixin author-bold-text {
   font-family: $font-family-base;
   font-weight: $font-weight-bold;
   font-size: 20px;
   line-height: 1.9;
+  color: constants.$grey;
 
-  @media (max-width: $mobile-breakpoint) {
+  @media (max-width: constants.$mobile-breakpoint) {
+    font-size: 15px;
+  }
+}
+
+@mixin author-light-text {
+  font-family: $font-family-base;
+  font-weight: $font-weight-light;
+  font-size: 20px;
+  line-height: 1.9;
+  color: constants.$light-grey;
+
+  @media (max-width: constants.$mobile-breakpoint) {
     font-size: 15px;
   }
 }

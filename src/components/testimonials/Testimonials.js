@@ -1,20 +1,28 @@
 import './styles.scss';
-import patternCurve from '../../images/pattern-curve.svg';
+import photo from '../photo/photo';
+import quote from '../quote/quote';
+import buttons from '../buttons/buttons';
 
-function Testimonials() {
+function testimonials() {
+  const quoteArgs = quote(
+    {
+      content: 'I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future.',
+      name: 'Tanya Sinclair',
+      role: 'UX Engineer'
+    }
+  );
+
   return (
     `
       <div class="testimonials">
-        <h1>Hello Vite!</h1>
-        <div class="card">
-          <button id="counter" type="button"></button>
+        <div class="testimonials-card">
+          ${quoteArgs}
+          ${buttons()}
+          ${photo()}
         </div>
-      </div>
-      <div class="background">
-        <img src="${patternCurve}" alt="" />
       </div>
     `
   );
 }
 
-export default Testimonials;
+export default testimonials;

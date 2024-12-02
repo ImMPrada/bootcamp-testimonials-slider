@@ -8,13 +8,13 @@ renderTestimonial(state);
 
 const changeTestimonialsIndex = buildAction(state);
 
-addListenerToButton(state, 'prevButton', () => {
+addListenerToButton('prevButton', () => {
   changeTestimonialsIndex(-1);
   console.log(state);
   renderTestimonial(state);
 });
 
-addListenerToButton(state, 'nextButton', () => {
+addListenerToButton('nextButton', () => {
   changeTestimonialsIndex(1);
   console.log(state);
   renderTestimonial(state);

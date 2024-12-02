@@ -1,12 +1,18 @@
 import './styles.scss';
 import tanya from '../../images/image-tanya.jpg';
+import john from '../../images/image-john.jpg';
 
-function photo() {
+function photo(args) {
+  const images = {
+    'tanya': tanya,
+    'john': john
+  };
+
+  const { src, name } = args;
+
   return (
     `
-      <div class="photo">
-        <img src="${tanya}" alt="Tanya" />
-      </div>
+      <img src="${images[src]}" alt="${name}" />
     `
   );
 }

@@ -5,14 +5,12 @@ function quote(args) {
 
   return (
     `
-      <div class="quote">
-        <p>
-          ${content}
-        </p>
-        <p class="quote-author">
-          ${name} <span>${role}</span>
-        </p>
-      </div>
+      <p>
+        ${content}
+      </p>
+      <p class="quote-author">
+        ${name} <span>${role}</span>
+      </p>
     `
   );
 }
